@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    background-color: hsl(185, 75%, 39%);
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    height: 100vh;
+    max-width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -500px, 540px;
+    background-position-y: -1000px, 500px;
+    background-size: 100%, 80%;
+    
+}
+
+.container {
+    background-color: white;
+    width: 350px;
+    height: 420px;
+    min-width: 390px;
+    min-height: 420px;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.picContainer {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100% 150px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.victor {
+    margin: 0 auto;
+    border-radius: 5rem;
+    border: 5px solid #ffffff;
+}
+
+
+.mainInfo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+
+.name {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+
+.age {
+    color: grey;
+    margin-left: 10px;
+}
+
+
+.area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: grey;
+    font-size: small;
+}
+
+.line {
+    width: 100%;
+    margin-top: 30px;
+    border: 0 none;
+    height: 1px;
+    color: #ffffff;
+
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-right: 3px;
+}
+
+
+.people{
+    color: grey;
+    font-weight: 400;
+    font-size: small;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.like{
+    color: grey;
+    font-weight: 400;
+    font-size: small;
+    letter-spacing: 2px;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+.photos{
+    color: grey;
+    font-weight: 400;
+    font-size: small;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.numbFollowers {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.numbLikes {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+.numbPhotos {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+@media (max-width:1080px)and (min-width:780px){
+    body{
+        background-position-x: -500px, 340px;
+        background-position-y: -600px, 500px;
+        background-size: 100%, 100%;
+    }
+}
+@media (max-width:780px)
+{
+    body {
+        background-position-x: -300px, 300px;
+        background-position-y: -300px, 500px;
+        background-size: 100%, 100%;
+    }
+}
+@media (max-width:480px)
+{
+body{
+        background-position-x: -200px, 300px;
+        background-position-y: -200px, 500px;
+        background-size: 100%, 100%;
+    }
+}
